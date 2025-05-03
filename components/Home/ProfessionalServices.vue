@@ -1,6 +1,10 @@
 <template>
-  <section class="sm:container sm:mx-auto md:mt-20">
-    <h2 class="font-bold max-md:text-4xl md:text-[64px]">專業服務與方案</h2>
+  <section class="sm:container sm:m-auto md:mt-20">
+    <h2
+      class="font-bold max-md:text-5xl md:text-[64px] m-auto text-center md:text-left text-[32px] leading-[1.5]"
+    >
+      專業服務與方案
+    </h2>
     <div class="services">
       <ServiceItem
         v-for="item in services"

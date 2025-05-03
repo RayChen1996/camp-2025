@@ -27,13 +27,14 @@ const isReverse = computed(() => props.index % 2 === 1);
   max-width: 1076px;
   margin: 0 auto;
 }
-
-.service-item.reverse {
-  flex-direction: row;
-}
-
-.service-item.reverse {
-  flex-direction: row-reverse;
+.service-text {
+  max-width: 430px;
+  background: #fff;
+  padding: 24px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  margin-left: -60px;
 }
 
 .service-image {
@@ -43,15 +44,40 @@ const isReverse = computed(() => props.index % 2 === 1);
   margin-right: 1.5rem;
   background: #f5f5f5;
 }
+@media (max-width: 768px) {
+  .service-item,
+  .service-item.reverse {
+    flex-direction: column !important;
+    align-items: stretch;
+  }
+  .service-image {
+    width: 100%;
+    height: 200px;
+    margin: 0 0 1rem 0 !important;
+  }
+  .service-text {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 16px;
+  }
+  .service-text {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 16px;
+  }
+  .service-image {
+    width: 100%;
+    height: 200px;
+    padding: 16px;
+  }
+}
 
-.service-text {
-  max-width: 430px;
-  background: #fff;
-  padding: 24px;
-  position: relative;
-  z-index: 2;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-  margin-left: -60px;
+.service-item.reverse {
+  flex-direction: row;
+}
+
+.service-item.reverse {
+  flex-direction: row-reverse;
 }
 
 .service-item.reverse .service-image {

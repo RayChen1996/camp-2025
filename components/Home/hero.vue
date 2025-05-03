@@ -16,27 +16,29 @@
         <img
           src="../../assets/b19aaaaa02cce8c29658712548f1ce4bffb31f5b.jpg"
           alt="背景"
-          class="w-full h-full object-cover"
+          class="object-cover h-[180px] md:h-[500px] lg:h-[600px] w-full"
         />
         <!-- 文字區塊 -->
-        <div class="absolute inset-0 flex items-center justify-center">
+        <div
+          class="absolute inset-0 -mt-52 md:mt-0 flex items-center justify-center"
+        >
           <div>
             <h1
-              class="lg:text-[120px] text-5xl font-black leading-[1.5] text-blue-700"
+              class="lg:text-[120px] text-[52px] font-black leading-[1.5] text-blue-700"
             >
               Alyse Wang
             </h1>
-            <p
-              class="mt-2 text-sm md:text-[28px] text-blue-600 font-bold font-jinxuan"
-            >
+            <p class="mt-2 text-[28px] text-blue-600 font-bold font-jinxuan">
               前端工程師 & 職涯導師
             </p>
           </div>
         </div>
         <!-- 下方介紹與社群 -->
-        <div class="p-6 md:p-10 bg-white absolute -left-32 -bottom-20">
-          <p class="text-lg mb-4">嗨，我是 Alyse，一名熱愛前端技術的工程師。</p>
-          <p class="mt-4">
+        <div class="p-6 md:p-10 bg-white md:absolute -left-32 -bottom-20">
+          <p class="text-lg mb-4 leading-[1.5]">
+            嗨，我是 Alyse，一名熱愛前端技術的工程師。
+          </p>
+          <p class="mt-4 leading-[1.5]">
             擅長 React、Vue
             等框架，致力於幫助新手工程師提供職涯指導，邀請你與我一起，開啟更具潛能的程式與職涯之旅！
           </p>
