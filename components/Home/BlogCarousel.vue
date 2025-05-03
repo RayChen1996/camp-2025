@@ -1,6 +1,6 @@
 <template>
-  <section>
-    <h2>部落格精選</h2>
+  <section class="sm:container sm:m-auto md:mt-20">
+    <h2 class="md:text-[64px] font-bold">部落格精選</h2>
     <Carousel>
       <BlogCard
         v-for="post in posts"

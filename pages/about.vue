@@ -1,3 +1,6 @@
+import { BlogPostsGrid } from '../.nuxt/components';
 <template>
-  <h1>about</h1>
+  <BlogHero />
+  <BlogBanner />
+  <BlogPostsGrid />
 </template>

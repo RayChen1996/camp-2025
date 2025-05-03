@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white text-gray-800 sm:container sm:mx-auto">
+  <div class="bg-white text-gray-800 mx-auto">
     <!-- 上方兩欄 -->
     <div class="grid grid-cols-1 md:grid-cols-2">
       <!-- 左側個人照片 -->

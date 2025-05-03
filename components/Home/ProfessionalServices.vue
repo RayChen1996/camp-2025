@@ -15,6 +15,18 @@
         :index="item.index"
       />
     </div>
+    <div class="flex items-center justify-end mt-10">
+      <span class="font-bold text-[28px]"> 聯繫我，取得更多資訊！ </span>
+      <button>
+        <NuxtLink to="/contact" class="text-blue-500 hover:underline">
+          <img
+            src="/images/moreArrow.svg"
+            alt="arrow right"
+            class="inline-block mr-2"
+          />
+        </NuxtLink>
+      </button>
+    </div>
   </section>
 </template>
 
