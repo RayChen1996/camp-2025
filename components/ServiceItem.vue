@@ -1,5 +1,9 @@
 <template>
-  <div class="service-item" :class="{ reverse: isReverse }">
+  <div
+    data-aos="zoom-in-left"
+    class="service-item"
+    :class="{ reverse: isReverse }"
+  >
     <img :src="image" :alt="title" class="service-image" />
     <div class="service-text">
       <h3 class="service-title">{{ title }}</h3>

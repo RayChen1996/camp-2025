@@ -3,7 +3,7 @@
     <!-- 上方兩欄 -->
     <div class="grid grid-cols-1 md:grid-cols-2">
       <!-- 左側個人照片 -->
-      <div>
+      <div data-aos="fade-right">
         <img
           src="../../assets/fea7717a1f97e950c0958cbf71d6b886005b7add.jpg"
           alt="個人照片"
@@ -20,6 +20,7 @@
         />
         <!-- 文字區塊 -->
         <div
+          data-aos="fade-down"
           class="absolute inset-0 -mt-52 md:mt-0 flex items-center justify-center"
         >
           <div>

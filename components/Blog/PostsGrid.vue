@@ -1,15 +1,23 @@
 <template>
-  <section class="sm:container m-auto mt-20 mb-16">
-    <input
-      class="border rounded-full px-4 py-2 mb-8"
-      placeholder="搜尋你感興趣的文章"
-      type="search"
-    />
+  <section class="sm:container max-md:mx-3 m-auto mt-20 mb-16">
+    <div class="relative mb-8 max-md:w-full lg:w-[416px]">
+      <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+        <img src="/search.svg" alt="" class="w-5 h-5 text-gray-400" />
+      </span>
+      <input
+        class="border rounded-full pl-10 pr-4 py-2 w-full"
+        placeholder="搜尋你感興趣的文章"
+        type="search"
+      />
+    </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       <div
-        v-for="article in articles"
+        v-for="(article, idx) in articles"
         :key="article.id"
         class="bg-white shadow-md rounded-lg overflow-hidden"
+        :data-aos="
+          Math.floor(idx / 3) % 2 === 0 ? 'fade-left' : 'fade-up-right'
+        "
       >
         <img :src="article.imageUrl" alt="" class="w-full h-48 object-cover" />
         <div class="p-4">
