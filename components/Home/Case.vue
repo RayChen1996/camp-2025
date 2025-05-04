@@ -1,6 +1,8 @@
 <template>
   <section class="sm:container sm:m-auto md:mt-20 px-4">
-    <h2 class="md:text-[64px] text-3xl font-bold text-center md:text-left mb-8">
+    <h2
+      class="md:text-[64px] text-3xl font-bold md:text-center text-left mb-8 mt-16 md:mb-6"
+    >
       職涯諮詢成功案例
     </h2>
 

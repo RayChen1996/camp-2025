@@ -1,7 +1,7 @@
 <template>
   <section class="sm:container max-md:mx-3 sm:m-auto md:mt-20">
     <h2
-      class="font-bold max-md:text-5xl md:text-[64px] m-auto text-center md:text-left text-[32px] leading-[1.5]"
+      class="font-bold max-md:text-5xl md:text-[64px] m-auto mb-8 mt-16 text-center md:text-left text-[32px] leading-[1.5]"
     >
       專業服務與方案
     </h2>
