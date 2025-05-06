@@ -1,5 +1,5 @@
 <template>
-  <section class="sm:container max-md:mx-3 m-auto mt-20 mb-16">
+  <section class="sm:container px-4 max-md:mx-3 m-auto mt-20 mb-16">
     <div class="relative mb-8 max-md:w-full lg:w-[416px]">
       <span class="absolute inset-y-0 left-0 flex items-center pl-3">
         <img src="/search.svg" alt="" class="w-5 h-5 text-gray-400" />

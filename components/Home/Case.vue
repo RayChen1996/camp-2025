@@ -35,7 +35,7 @@
           </p>
 
           <button
-            class="bg-white font-bold text-[#0027D5] border px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors"
+            class="bg-white font-bold text-[#0027D5] border px-4 py-2 rounded-full text-sm hover:bg-gray-200 transition-colors"
           >
             立即預約諮詢
           </button>

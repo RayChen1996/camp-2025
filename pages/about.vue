@@ -3,6 +3,7 @@ import { BlogPostsGrid } from '../.nuxt/components';
   <BlogHero />
   <BlogBanner />
   <BlogPostsGrid />
+  <BlogContractArea />
 </template>
 <script setup lang="ts">
 import AOS from "aos";
