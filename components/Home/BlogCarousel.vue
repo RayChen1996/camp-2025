@@ -83,25 +83,56 @@
 
       <!-- Swiper -->
       <Swiper
-        :modules="[Navigation]"
+        :modules="[Navigation, Autoplay]"
         :breakpoints="{
           0: { slidesPerView: 1 },
           640: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
         }"
         :space-between="20"
+        :autoplay="{ delay: 3000, disableOnInteraction: false }"
         class="mySwiper"
         @swiper="onSwiper"
       >
         <SwiperSlide v-for="article in articles" :key="article.id">
-          <div class="bg-white p-6 rounded shadow-md">
+          <div class="bg-white">
             <img
               :src="article.imageUrl"
               alt=""
-              class="w-full h-48 object-cover mb-4"
+              class="w-full h-48 object-cover"
             />
-            <h3 class="text-xl font-bold">{{ article.title }}</h3>
-            <p class="text-gray-600 mt-2">{{ article.description }}</p>
+            <div class="p-4">
+              <p class="text-gray-600 text-sm">{{ article.date }}</p>
+              <div>
+                <div class="flex flex-wrap gap-2 mb-2">
+                  <span
+                    v-for="tag in article.tags"
+                    :key="tag"
+                    class="inline-block leading-[1.5] text-2xl text-[#0027D5] px-2 py-1 rounded"
+                  >
+                    #{{ tag }}
+                  </span>
+                  <span
+                    v-if="article.popular"
+                    class="inline-block leading-[1.5] rounded-full bg-[#0027D5] text-2xl text-white px-3 py-[6px]"
+                  >
+                    人氣文章
+                  </span>
+                </div>
+              </div>
+              <h3 class="text-xl font-semibold">{{ article.title }}</h3>
+
+              <p
+                class="text-gray-700 mt-2 overflow-hidden text-ellipsis line-clamp-2 min-h-[48px]"
+              >
+                {{ article.description }}
+              </p>
+              <a
+                href="#"
+                class="inline-block mt-4 border py-2 px-4 rounded-full"
+                >閱讀內文</a
+              >
+            </div>
           </div>
         </SwiperSlide>
       </Swiper>
@@ -111,7 +142,7 @@
 <script setup>
 import { ref } from "vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 
 const swiperRef = ref(null);

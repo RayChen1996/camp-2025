@@ -14,7 +14,7 @@
       <div
         v-for="(article, idx) in articles"
         :key="article.id"
-        class="bg-white shadow-md rounded-lg overflow-hidden"
+        class="bg-white"
         :data-aos="
           Math.floor(idx / 3) % 2 === 0 ? 'fade-left' : 'fade-up-right'
         "
@@ -41,7 +41,11 @@
           </div>
           <h3 class="text-xl font-semibold">{{ article.title }}</h3>
 
-          <p class="text-gray-700 mt-2">{{ article.description }}</p>
+          <p
+            class="text-gray-700 mt-2 overflow-hidden text-ellipsis line-clamp-2 min-h-[48px]"
+          >
+            {{ article.description }}
+          </p>
           <a href="#" class="inline-block mt-4 border py-2 px-4 rounded-full"
             >閱讀內文</a
           >
