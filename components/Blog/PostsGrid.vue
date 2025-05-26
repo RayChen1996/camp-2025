@@ -46,8 +46,13 @@
           >
             {{ article.description }}
           </p>
-          <a href="#" class="inline-block mt-4 border py-2 px-4 rounded-full"
+          <!-- <a href="#" class="inline-block mt-4 border py-2 px-4 rounded-full"
             >閱讀內文</a
+          > -->
+          <NuxtLink
+            :to="`/blog/${article.id}`"
+            class="inline-block mt-4 border py-2 px-4 rounded-full"
+            >閱讀內文</NuxtLink
           >
         </div>
       </div>
